@@ -2,11 +2,15 @@
 /// Purpose: A container to hold all attributes and methods in a class 
 /// Change Log: B.Grant 1/18/2023
 
+using Brent_Csharp_WPF.DataAccess;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace Brent_Csharp_WPF.Entity
@@ -229,6 +233,45 @@ namespace Brent_Csharp_WPF.Entity
             strCustomerPhone = AstrCustomerPhone;
             strCustomerEmail = AstrCustomerEmail;
         }
+
+        /*
+         Class Methods
+         */
+
+        /*
+         * Method Name: classInfo
+         * Purpose: To obtain all the records from the database for this enity
+         * Parameter: None
+         * Return: All the records for this entity - DataSet
+         * Change Log: B.Grant 1/19/2023
+         */
+
+        public string classInfo() 
+        {
+            return "customer ID =" + CustomerID + "\r" + "customer First Name: " + CustomerFirstName + "\r" + "customer Last Name: " + CustomerLastName + "\r" + "customer Address: " + CustomerAddress + "\r" +
+                "customer City: " + CustomerCity + "\r" + "customer State: " + CustomerState + "\r" + "customer Zip: " + CustomerZip + "\r" + "customer Phone: " + CustomerPhoneNumber + "\r" + "customer Email: " + CustomerEmail + "\r" + "\r";
+        }
+
+        /*
+         Method Name: GetRecords
+         Purpose: To obtain all the records from the database for this entity
+         Parameter: None
+         Return: All the records for this entity - Dataset
+         Change Log: B.Grant 1/19/2023
+         */
+
+        public static DataSet GetRecords()
+        {
+            try
+            {
+                return clsCustomerDA.GetRecords(); // This is coming for the clsCustomerDA method of GetRecords
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error occurred in Class: clsCustomer. Method: GetRecords().Error: " + ex.Message);
+            }
+        } 
 
     }
 }
