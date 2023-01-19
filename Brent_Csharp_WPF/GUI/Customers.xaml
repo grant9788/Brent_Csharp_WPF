@@ -30,6 +30,10 @@
         <TextBox HorizontalAlignment="Left" Margin="192,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Phone Number" HorizontalAlignment="Left" Margin="192,141,0,0" VerticalAlignment="Top"/>
         <Label Content="Customer Notes" HorizontalAlignment="Left" Margin="192,191,0,0" VerticalAlignment="Top"/>
+        <Button Content="Previous" HorizontalAlignment="Left" Margin="294,348,0,0" VerticalAlignment="Top"/>
+        <Button Content="First" HorizontalAlignment="Left" Margin="243,348,0,0" VerticalAlignment="Top"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="467,348,0,0" VerticalAlignment="Top"/>
+        <Button Content="Last" HorizontalAlignment="Left" Margin="527,348,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

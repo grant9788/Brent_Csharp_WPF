@@ -1,4 +1,8 @@
-﻿using System;
+﻿/// Form Name: Customers
+/// Purpose: To allow the user to either data or display and object
+/// Change Log: B.Grant 1/18/2023
+///
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +21,8 @@ namespace Brent_Csharp_WPF.GUI
     /// <summary>
     /// Interaction logic for Customers.xaml
     /// </summary>
+ 
+
     public partial class Customers : Window
     {
         public Customers()
