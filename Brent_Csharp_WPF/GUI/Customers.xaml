@@ -8,6 +8,28 @@
         Title="Customers" Height="450" Width="800">
     <Grid>
         <Button Content="Main Menu" HorizontalAlignment="Center" Margin="0,348,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="686,92,0,0" VerticalAlignment="Top" Width="43"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="686,147,0,0" VerticalAlignment="Top"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="686,202,0,0" VerticalAlignment="Top" Width="43"/>
+        <Label Content="Customer ID" HorizontalAlignment="Left" Margin="39,35,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="39,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.189,-0.255"/>
+        <TextBox HorizontalAlignment="Left" Margin="41,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="41,138,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="41,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="41,186,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="39,235,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,261,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="State" HorizontalAlignment="Left" Margin="41,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,0.547"/>
+        <TextBox HorizontalAlignment="Left" Margin="39,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Zip" HorizontalAlignment="Left" Margin="192,35,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="192,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="192,89,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="192,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="192,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="192,141,0,0" VerticalAlignment="Top"/>
+        <Label Content="Customer Notes" HorizontalAlignment="Left" Margin="192,191,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
