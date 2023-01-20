@@ -270,8 +270,73 @@ namespace Brent_Csharp_WPF.Entity
             {
 
                 MessageBox.Show("Error occurred in Class: clsCustomer. Method: GetRecords().Error: " + ex.Message);
+                return null; //Error Possible but still need to code out clsCustomerDA
             }
-        } 
+        }
 
+        /*
+         Method Name: DeleteRecords
+         Purpose: To obtain all the records from the database for this entity
+         Parameter: Primary Key - String
+         Return: Result (number of rows affected) - Integer
+         Change Log: B.Grant 1/19/2023
+         */
+
+        public static int DeleteRecord(string aPrimaryKey) 
+        {
+            try
+            {
+                return clsCustomerDA.DeleteRecord(aPrimaryKey);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error occurred in Class: clsCustomer. Method: DeleteRecord(String). Error: " + ex.Message);
+                return -9;
+            }
+        }
+
+        /*
+         Method Name: AddRecords
+         Purpose: To obtain all the records from the database for this entity
+         Parameter: Object (customer) - clsCustomer
+         Return: Result (number of rows affected) - Integer
+         Change Log: B.Grant 1/19/2023
+         */
+
+        public static int AddRecord(clsCustomer aCustomer) 
+        {
+            try
+            {
+                return clsCustomerDA.AddRecord(aCustomer);
+            }
+            catch (Exception)
+            {
+
+                return -9;
+            }
+        }
+
+        /*
+         Method Name: UpdateRecords
+         Purpose: To obtain all the records from the database for this entity
+         Parameter: Object (customer) - clsCustomer
+         Return: Result (number of rows affected) - Integer
+         Change Log: B.Grant 1/19/2023
+         */
+
+        public static int UpdateRecord(clsCustomer aCustomer) 
+        {
+            try
+            {
+                return clsCustomerDA.UpdateRecord(aCustomer);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error occurred in Class: clsCustomer. Method: UpdateRecored(Object). Error: " + ex.Message);
+                return -9;
+            }
+        }
     }
+
 }
