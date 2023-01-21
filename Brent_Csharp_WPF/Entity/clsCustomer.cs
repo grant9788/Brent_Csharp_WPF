@@ -30,6 +30,10 @@ namespace Brent_Csharp_WPF.Entity
         private string strCustomerEmail;
         private string strCustomerPhone;
 
+        /*
+         Property methods - getters and setters
+         */
+
         public int CustomerID 
         { 
         
